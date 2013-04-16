@@ -1,0 +1,64 @@
+/* Current weather widget styles 0.0.1
+----------------------------------------------------------------------------- */
+.no-js .current-weather-widget {
+	display: none;
+}
+.current-weather-widget {
+	overflow: hidden;
+}
+/* This is an override for the 2011 and 2012 theme. Not sure why,
+   but not getting margin collapse. However, without p, the line-height
+   is all wrong. So a p element with the following rule seems the simplest
+   and most minimal. */
+.widget-area .current-weather-widget p.current-weather-widget-p {
+	margin-bottom: 0;
+}
+.current-weather-widget-location,
+.current-weather-widget-time,
+.current-weather-widget-temps,
+.current-weather-widget-temp,
+.current-weather-widget-temp img,
+.current-weather-widget-attr {
+	display: block;
+}
+.current-weather-widget-location {
+	font-size: 120%;
+}
+.current-weather-widget-time {
+	margin-bottom: 0.75em;
+}
+.current-weather-widget-temps {
+	line-height: 33px;
+	overflow: hidden;
+}
+.current-weather-widget-temp,
+.current-weather-widget-temp img {
+	float: left;
+}
+.current-weather-widget-temp {
+	font-size: 120%;
+	white-space: nowrap;
+	width: 60%;
+}
+/* Don't like stacking the selectors like this, but need to override
+   2012 theme defaults. Boo! */
+.current-weather-widget .current-weather-widget-temp img {
+	border-radius: 0;
+	box-shadow: none;
+}
+.current-weather-widget-temp img {
+	height: 33px;
+	margin: 0 0.5em 0 0;
+	width: 33px;
+}
+.current-weather-widget-high-low {
+	float: right;
+	text-align: right;
+}
+.current-weather-widget-high {
+	padding-right: 0.75em;
+}
+.current-weather-widget-attr {
+	font-size: 80%;
+	margin-top: 0.75em;
+}
